@@ -8,11 +8,22 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+TARGET_DISABLE_EPPE := true
+
 # Inherit from rtwo device
 $(call inherit-product, device/motorola/rtwo/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+#Evolution Xtras
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GMS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+#BCR
+BUILD_BCR := true
+
 
 PRODUCT_NAME := lineage_rtwo
 PRODUCT_DEVICE := rtwo
