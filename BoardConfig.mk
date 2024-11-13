@@ -6,6 +6,10 @@
 
 DEVICE_PATH := device/motorola/rtwo
 
+BUILD_BROKEN_DUP_RULES := true
+SPOOF_FIRST_API_LEVEL_32 := true
+
+
 # Inherit from motorola sm8550-common
 include device/motorola/sm8550-common/BoardConfigCommon.mk
 
