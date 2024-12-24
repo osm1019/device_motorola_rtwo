@@ -178,6 +178,7 @@
                 <name>PAL_STREAM_DEEP_BUFFER</name>
                 <ec_enable>1</ec_enable>
                 <bit_width>24</bit_width>
+                <snd_device_name>handset-dmic-endfire-record</snd_device_name>
                 <custom-config key="unprocessed-hdr-mic-landscape">
                     <channels>4</channels>
                     <snd_device_name>unprocessed-hdr-mic-landscape</snd_device_name>
