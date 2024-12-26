@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
+TARGET_DISABLE_EPPE := true
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -13,6 +13,14 @@ $(call inherit-product, device/motorola/rtwo/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+#MistOS Extras
+WITH_GMS := true
+MISTOS_MAINTAINER=OscarM
+TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+
 
 PRODUCT_NAME := lineage_rtwo
 PRODUCT_DEVICE := rtwo
